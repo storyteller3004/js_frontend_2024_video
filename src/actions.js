@@ -1,20 +1,20 @@
-export const MYLIBRARY_ADD = 'MYLIBRARY_ADD'
-export const MYLIBRARY_ALL = 'MYLIBRARY_ALL'
-export const MYLIBRARY_DELETE = 'MYLIBRARY_DELETE'
-export const MYLIBRARY_UPDATE = 'MYLIBRARY_UPDATE'
+export const TODO_ADD = 'TODO_ADD'
+export const TODO_ADD_ALL = 'TODO_ADD_ALL'
+export const TODO_DELETE = 'TODO_DELETE'
+export const TODO_UPDATE = 'TODO_UPDATE'
 
-export function mylibraryAdd (_id, title, author, genre){
-	return { type: MYLIBRARY_ADD, _id, title, author, genre};
+export function mylibraryAdd (_id, name, description){
+	return { type: TODO_ADD, _id, name, description};
 }
 
-export function mylibraryAddAll (mylibrary_list){
-	return { type: MYLIBRARY_ALL, mylibrary_list };
+export function mylibraryAddAll (todo_list){
+	return { type: TODO_ADD_ALL, todo_list };
 }
 
 export function mylibraryDelete (_id){
-	return { type: MYLIBRARY_DELETE, _id };
+	return { type: TODO_DELETE, _id };
 }
 
 export function mylibraryUpdate (_id){
-	return { type: MYLIBRARY_UPDATE, _id };
+	return { type: TODO_UPDATE, _id };
 }
