@@ -82,7 +82,7 @@ class ToDoTaskAddInner extends React.Component {
 	}
 }
 
-}
+
 
 const ToDoTaskAdd = (props) => {
 	return(
